@@ -91,26 +91,24 @@
 
 #3
 
-from typing import Union, Tuple
+# from typing import Union, Tuple
 
 
-Number_a = float(input("enter number: "))
-Number_b = float(input("enter number: "))
+# Number_a = float(input("enter number: "))
+# Number_b = float(input("enter number: "))
 
-def input_two_numbers_to_calculate(Number_a: Union[int, float], Number_b:Union[int, float]) ->Tuple[float]:
-    addition = Number_a + Number_b
-    subtraction = Number_a - Number_b
-    multiplication = Number_a * Number_b
+# def input_two_numbers_to_calculate(Number_a: Union[int, float], Number_b:Union[int, float]) ->Tuple[float]:
+#     addition = Number_a + Number_b
+#     subtraction = Number_a - Number_b
+#     multiplication = Number_a * Number_b
         
-    if Number_b != 0:
-        division = Number_a / Number_b
-    else:
-        division = "Division by zero is not allowed."
+#     if Number_b != 0:
+#         division = Number_a / Number_b
+#     else:
+#         division = "Division by zero is not allowed."
 
-    return addition, subtraction, multiplication, division
+#     return addition, subtraction, multiplication, division
 
-
-print("return")
 
 #4
 
@@ -131,6 +129,8 @@ print("return")
 # Create a mini program that takes 10 random numbers in one input ("1,2,5 76,89 ...etc")
 # Write functions to: calculate their sum, multiplication of highest and lowest numbers
 # and the function which makes a new string where numbers are positioned from highest to lowest.
+
+
 
 #2 namu darbai
 # Create a program , which takes 3 different sentences. 
