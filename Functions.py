@@ -129,3 +129,94 @@
 # Create a mini program that takes 10 random numbers in one input ("1,2,5 76,89 ...etc")
 # Write functions to: calculate their sum, multiplication of highest and lowest numbers
 # and the function which makes a new string where numbers are positioned from highest to lowest.
+
+
+#1
+
+# from typing import List, Optional
+
+
+# my_numbers = input("Enter 10 random numbers: ")
+# my_list = [float(num) for num in my_numbers.split(",")]
+
+# def calculate_sum(numbers: List[float]) -> float:
+#     return sum(numbers)
+
+# new_sum = calculate_sum(my_list)
+# print(new_sum)
+
+# def calculate_multiplication(numbers: List[float]) -> float:
+#     return min(numbers) * max(numbers)
+
+# new_multiplication = calculate_multiplication(my_list)
+# print(new_multiplication)
+
+# def sort_numbers(numbers: List[float]) ->float:
+#     sorted_numbers = sorted (numbers, reverse=True)
+#     sorted_stirng = ",".join(map(str, sorted_numbers))
+#     return sorted_stirng
+
+# sorted_numbers_str = sort_numbers(my_list)
+# print(sorted_numbers_str)
+
+
+# User enters two names separated by comma : for example :('Mindaugas PiktasDestytojas, Mindaugas Juokauja') 
+# Create a function that would swipe surnames and will prduxe new name surname and 
+# another function funtion that will swap names.
+
+
+
+# from typing import List
+
+
+# input_names = input("Enter 2 names and surnames separated by coma: ")
+
+# def swap_surnames(names: List[str]) ->List:
+#     name_list = names.split(',')
+    
+#     if len(name_list) == 2:
+#         first_name, second_name = name_list[0].strip(), name_list[1].strip()
+        
+#         first_surname = first_name.split()[-1]
+#         second_surname = second_name.split()[-1]
+        
+#         new_name = f"{first_name.replace(first_surname, second_surname)} {second_name.replace(second_surname, first_surname)}"
+        
+#         return new_name
+
+# swapped_names = swap_surnames(input_names)
+# print(swapped_names)
+
+# from typing import List
+
+# input_names = input("Enter 2 names and surnames separated by comma: ")
+
+# def swap_names(names: List[str]) ->str:
+#     name_list = names.split(',')
+    
+#     if len(name_list) == 2:
+#         first_name, second_name = name_list[0].strip(), name_list[1].strip()
+        
+#         first_first_name = first_name.split()[0]
+#         second_first_name = second_name.split()[0]
+        
+#         new_name = f"{second_first_name} {first_name.replace(first_first_name, second_first_name)}," \
+#                    f" {first_first_name} {second_name.replace(second_first_name, first_first_name)}"
+        
+#         return new_name
+
+# swapped_names = swap_names(input_names)
+# print(swapped_names)
+
+# 2 namu darbai
+# Create a program , which takes 3 different sentences. 
+# The input should have all error checking in mind. 
+# The program then should create a dictionary of whith key values corresponding to words `long` (more than 9 letters in a words) `medium`(7 letters)
+# `short` (5 words). 
+# Then the pgrogram should create a new sentences (if 3 provided, 3 new sentences should be returned) 
+# with following rules attached:
+# All sentences should have same (or less) words amount as entered one;
+# The most frequent letter from the sentence (from input) should be dominated in a new sentence as well.
+
+# The program should return new sentences with statitstics of ratio how many words was used from all sections 
+# (as for exmpale: long 10%,medium 25%, short <35%)
